@@ -1,0 +1,20 @@
+div {
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div dd {
+    margin: 0px;
+    font-size: 10pt;
+}
+
+div dd.dd_name {
+    color: blue;
+}
+
+div dd.dd_city {
+    color: #000;
+}

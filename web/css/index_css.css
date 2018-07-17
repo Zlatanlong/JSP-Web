@@ -1,0 +1,87 @@
+.lysrc {
+    width: 200px;
+    height: 180px;
+}
+
+.lyfront {
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.cdbtn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #4d92d9;
+    background-color: #4d92d9;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.cdbtn:hover {
+    background-color: transparent;
+    color: #4d92d9;
+    transition: 0.4s;
+}
+
+.text-desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.port-2 {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    perspective: 800px;
+}
+
+.port-2 .text-desc {
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.port-2 .image-box {
+    transition: 0.4s;
+}
+
+.port-2:hover .image-box {
+    transform: rotateX(80deg);
+    transform-origin: center bottom 0;
+    transition: 0.4s;
+}
+
+.port-2.effect-1:hover .text-desc {
+    opacity: 1;
+}
+
+.text-desc:hover {
+    border: 1.5px solid #177;
+}
+
+.listdiv {
+    float: left;
+    width: 204px;
+    height: 184px;
+    margin: 20px 10px;
+}
+
+table {
+    width : 750px;
+    height : 60px;
+    cellpadding : 0;
+    cellspacing : 0;
+    border : 0;
+}

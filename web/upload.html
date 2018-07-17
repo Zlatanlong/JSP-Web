@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+<LINK href="../function/common.css" rel=stylesheet type=text/css>
+
+<style type="text/css">
+<!--
+body {
+    margin:0px;
+    height: 40px;
+    width: 300px;
+}
+
+#file {
+	float: left;
+	height: auto;
+	width: 200px;
+}
+#submit {
+	/*color: #0033FF;*/
+	/*text-decoration: underline blink;*/
+	width: 70px;
+	display:none;
+	position: absolute;
+	left: 230px;
+	cursor:hand;
+}
+-->
+
+</style>
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function on_submit(){
+	if(frm.file.value!=""){frm.submit();}
+}
+function on_change(){
+	submit.style.display="inline";
+}
+//-->
+</SCRIPT>
+<BODY>
+<FORM METHOD="POST" ACTION="saveUpload.jsp" enctype="multipart/form-data" name="frm">
+  <div id="file">
+	<input type="file" name="file" onChange="on_change();">&nbsp;&nbsp;&nbsp;
+  </div>
+  <button id="submit" onClick="on_submit()">
+	 上传图片  </button>
+</FORM>
+</BODY>
+</HTML>

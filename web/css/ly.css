@@ -1,0 +1,722 @@
+/*排版*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/beijing1.png);
+    background-size: 100% 100%;
+    margin: 0;
+    border: 0;
+
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 3px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 10%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-13 {
+    width: 13%;
+    height: 350px;
+}
+
+.col {
+    width: 55%;
+    float: left;
+    padding: 15px;
+}
+
+.aheader {
+
+    width: 100%;
+    float: left;
+    height: 120px;
+}
+
+.header {
+
+    color: #ffffff;
+
+    width: 79%;
+    float: left;
+    height: 120px;
+}
+
+.lheader {
+
+    background-size: 100% 100%;
+
+    float: left;
+    width: 10%;
+    height: 120px;
+
+}
+
+.lheader > nav {
+    padding-top: 20px;
+
+}
+
+.header > nav {
+
+    padding-top: 20px;
+
+}
+
+.rheader {
+    float: left;
+    width: 10%;
+    height: 120px;
+}
+
+.row1 {
+
+    color: #ffffff;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    height: 300px;
+}
+
+.footer {
+
+    color: #ffffff;
+    width: 100%;
+    float: left;
+    height: 50px;
+}
+
+.infooter {
+
+    color: #ffffff;
+
+    width: 33%;
+    float: left;
+    height: 50px;
+}
+
+#div1 {
+
+    height: 280px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 7%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.rheader:hover .dropdown-content {
+    display: block;
+}
+
+.rheader:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.zhanshi {
+
+    height: 770px;
+}
+
+.tamiddle {
+    width: 100%;
+    float: left;
+
+}
+
+.tmiddle {
+
+    color: white;
+    padding: 0px;
+    width: 79%;
+    float: left;
+    height: 300px;
+
+}
+
+.tinmiddleleft {
+
+    color: white;
+    padding: 0px;
+    width: 45%;
+    float: left;
+    height: 300px;
+
+}
+
+.tinmiddleright {
+
+    color: white;
+    padding: 0px;
+    width: 34%;
+    float: left;
+    height: 300px;
+
+}
+
+.tlmiddle {
+
+    float: left;
+    width: 20%;
+    height: 300px;
+
+}
+
+.trmiddle {
+
+    float: left;
+    width: 1%;
+    height: 300px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.amiddle {
+    width: 100%;
+    float: left;
+
+}
+
+.middle {
+
+    color: white;
+    padding: 0px;
+    width: 79%;
+    float: left;
+
+}
+
+.inmiddleleft {
+
+    color: white;
+    padding: 0px;
+    width: 45%;
+    float: left;
+
+}
+
+.inmiddleright {
+
+    color: white;
+    padding: 0px;
+    width: 34%;
+    float: left;
+    height: 300px;
+
+}
+
+.lmiddle {
+
+    float: left;
+    width: 20%;
+    height: 300px;
+
+}
+
+.rmiddle {
+
+    float: left;
+    width: 1%;
+    height: 300px;
+}
+
+.time {
+    color: white;
+}
+
+.atime {
+    color: white;
+}
+
+/*搜索栏*/
+.search-area-wrapper {
+    float: left;
+    width: 100%;
+    height: 300px;
+
+}
+
+.search-area-wrapper .search-area {
+
+}
+
+h3.search-header {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+p.search-tag-line {
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+form.search-form {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+form.search-form .input-common, form.search-form input.search-term, form.search-form input.search-btn {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-shadow: none;
+    border-radius: 0;
+    display: inline-block;
+    border: none;
+    vertical-align: bottom;
+}
+
+form.search-form input.search-term {
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 12px;
+    width: 72%;
+    color: #858c91;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+form.search-form input.search-term.loading {
+    background-image: url("../images/search-loader.gif");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+form.search-form input.search-btn {
+    background-color: #3f4b55;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    padding: 14px 30px 15px;
+    color: #fff;
+}
+
+form.search-form input.search-btn:hover {
+    background-color: #4b5760;
+}
+
+#search-error-container label {
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.lt-ie8 form.search-form input.search-btn {
+    padding-top: 12px;
+    padding-bottom: 13px;
+}
+
+.mouseOver {
+    background: #708090;
+    color: #fffafa;
+}
+
+.mouseOut {
+    background: #fffafa;
+    color: #000000;
+}
+
+/*没用的导航栏*/
+.container1 {
+    max-width: 200px;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 40px auto;
+    padding: 10px 0px 20px 0px;
+    border: 1px solid #111;
+    border-radius: 4px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+.guding {
+    width: 8%;
+    height: 400px;
+
+    position: fixed;
+    top: 250px;
+    right: 0px;
+
+}
+
+.link1 {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.link1:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    bottom: 50%;
+    left: -100%;
+    transition-delay: all 0.05s;
+    transition: all 0.05s;
+}
+
+.link1:hover:after,
+.link1.hover:after {
+    left: 100%;
+}
+
+.link1 .text {
+    text-shadow: 0px -40px 0px rgba(255, 255, 255, 1);
+    transition: all 0.75s;
+    transform: translateY(100%) translateZ(0);
+    transition-delay: all 0.5s;
+}
+
+.link1:hover .text,
+.link1.hover .text {
+    text-shadow: 0px -40px 0px rgba(255, 255, 255, 0);
+    transform: translateY(0%) translateZ(0) scale(1.1);
+    font-weight: 600;
+}
+
+/*选项卡*/
+
+.gg {
+    height: 280px;
+    color: black;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*导航栏*/
+
+.nav3 ul > li:hover ul li {
+    height: 36px;
+}
+
+.nav3 li ul {
+    position: absolute;
+    right: 0;
+    top: 36px;
+    z-index: 1;
+}
+
+.rheader .nav3 li ul {
+    position: absolute;
+    left: 0;
+    top: 36px;
+    z-index: 1;
+}
+
+.nav3 li ul li {
+
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: height 200ms ease-in;
+    -moz-transition: height 200ms ease-in;
+    -o-transition: height 200ms ease-in;
+    transition: height 200ms ease-in;
+}
+
+.nav {
+    margin-bottom: 48px;
+}
+
+.nav ul {
+    *zoom: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* background:blue;*/
+}
+
+.nav ul:before,
+.nav ul:after {
+    content: "";
+    display: table;
+}
+
+.nav ul:after {
+    clear: both;
+}
+
+.nav ul > li {
+    float: left;
+    position: relative;
+}
+
+.rheader .nav ul > li {
+    float: right;
+    width: 110px;
+    position: relative;
+}
+
+.nav a {
+    display: block;
+    padding: 10px 20px;
+    line-height: 1.2em;
+    color: white;
+    border-left: 1px solid #595959;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    /* background:red;*/
+}
+
+.nav li ul {
+    /* background:blue;*/
+}
+
+.nav li ul li {
+    width: 110px;
+}
+
+.nav li ul a {
+    text-align: right;
+    border: none;
+}
+
+.nav li ul a:hover {
+    background: black;
+<!-- 0, 0, 0, 0.2 -->
+}
+
+/*会动的图*/
+
+.dmsc
+{
+    width:130px;
+    height:130px;
+    border:2px solid white;
+    border-radius:44px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    opacity: 1;
+    overflow:hidden;
+
+    background-size: 100% 100%;
+}
+.dmsc:hover
+{
+    width:150px;
+    height:150px;
+    border:2px solid red;
+    border-radius:14px;
+    opacity:0.8;
+}
+
+.circledm {
+    width: 130px;
+    height: 130px;
+    border: 2px solid white;
+    border-radius: 44px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    opacity: 0.6;
+    overflow: hidden;
+
+    background-size: 100% 100%;
+}
+
+.sousuotd {
+    width: 210px;
+    height: 150px;
+}
+
+.circledm:hover {
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    border-radius: 100px;
+    opacity: 1;
+}
+
+.circledm1 {
+    width: 160px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 44px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 1s, height 1s, transform 1s;
+    opacity: 0.6;
+    overflow: hidden;
+
+    background-size: 100% 100%;
+}
+
+.circledm1:hover {
+    width: 200px;
+    height: 140px;
+    border: 2px solid blue;
+    border-radius: 100px;
+    opacity: 1;
+}
+
+.tz
+{
+    border:2px solid white;
+    width:130px;
+    height:130px;
+    border-radius:100px;
+    -webkit-transition: width 0.2s, height 0.2s, -webkit-transform 0.2s;
+
+    transition: width 0.2s, height 0.2s, transform 0.2s;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.tz:hover
+{
+
+    background-size: 100% 100%;
+
+    width:150px;
+    height:150px;
+    border:2px solid red;
+    border-radius:300px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

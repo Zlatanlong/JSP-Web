@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--<servlet>-->
+    <!--<servlet-name>HelloServlet</servlet-name>-->
+    <!--<servlet-class>servlet.HelloServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>HelloServlet</servlet-name>-->
+    <!--<url-pattern>/servlet/HelloServlet</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/servlet/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EvaluateServlet</servlet-name>
+        <servlet-class>servlet.EvaluateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EvaluateServlet</servlet-name>
+        <url-pattern>/servlet/EvaluateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReplyServlet</servlet-name>
+        <servlet-class>servlet.ReplyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReplyServlet</servlet-name>
+        <url-pattern>/servlet/ReplyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddPraiseServlet</servlet-name>
+        <servlet-class>servlet.AddPraiseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPraiseServlet</servlet-name>
+        <url-pattern>/servlet/AddPraiseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegServlet</servlet-name>
+        <servlet-class>servlet.RegServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegServlet</servlet-name>
+        <url-pattern>/servlet/RegServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckServlet</servlet-name>
+        <servlet-class>servlet.CheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckServlet</servlet-name>
+        <url-pattern>/servlet/CheckServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageServlet</servlet-name>
+        <servlet-class>servlet.ManageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageServlet</servlet-name>
+        <url-pattern>/servlet/ManageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>servlet.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/servlet/SearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogOffServlet</servlet-name>
+        <servlet-class>servlet.LogOffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOffServlet</servlet-name>
+        <url-pattern>/servlet/LogOffServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

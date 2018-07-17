@@ -1,0 +1,30 @@
+#mydiv
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -120px;
+}
+
+#button
+{
+    background-color: #5566ee;
+}
+
+
+.mouseOver
+{
+    background: #708090;
+    color: #fffafa;
+}
+
+.mouseOut
+{
+    background: #fffafa;
+    color: #000000;
+}
+
+#popDiv{
+    z-index: 1000;
+}
