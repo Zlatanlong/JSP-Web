@@ -7,9 +7,9 @@ public class DBHelper {
 
     private static final String driver = "com.mysql.jdbc.Driver"; //数据库驱动
     //连接数据库的URL地址
-    private static final String url="jdbc:mysql://58.87.74.112/communication?useUnicode=true&characterEncoding=UTF-8";
-    private static final String username="upc2016";//数据库的用户名
-    private static final String password="comm2016";//数据库的密码
+    private static final String url="jdbc:mysql://140.143.64.233/dishweb?useUnicode=true&characterEncoding=UTF-8";
+    private static final String username="lichanglong";//数据库的用户名
+    private static final String password="upctx2016";//数据库的密码
 
     private static Connection conn=null;
 

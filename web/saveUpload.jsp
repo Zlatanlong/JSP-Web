@@ -6,6 +6,8 @@
       FileUploadBean upload=new FileUploadBean();
       String path = request.getRealPath("");
       path=path.substring(0,path.lastIndexOf("/",path.lastIndexOf("/")-1))+"/img";
+      <%-- path=path.substring(0,path.lastIndexOf("\\"))+"\\img"; --%>
+      <%-- windows --%>
       upload.setSavePath(path);
       upload.saveAs(newFilename);
       upload.doUpload(request);

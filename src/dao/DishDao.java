@@ -26,7 +26,7 @@ public class DishDao {
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
@@ -51,7 +51,7 @@ public class DishDao {
     /**
      * 把sql查询结果rs返回到list
      *
-     * @param rs 菜的集合
+     * @param rs   菜的集合
      * @param list
      * @throws SQLException
      */
@@ -100,7 +100,7 @@ public class DishDao {
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
@@ -139,7 +139,7 @@ public class DishDao {
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
@@ -178,7 +178,7 @@ public class DishDao {
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
@@ -216,7 +216,7 @@ public class DishDao {
                         flag = 1;
                     }
                 }
-                if (flag == 0&&getDishById(Integer.parseInt(arr[i]))!=null) {
+                if (flag == 0 && getDishById(Integer.parseInt(arr[i])) != null) {
                     Dish dish = getDishById(Integer.parseInt(arr[i]));
                     dishlist.add(dish);
                 }
@@ -250,7 +250,7 @@ public class DishDao {
     }
 
     //添加一个菜
-    public void insertDish(Dish dish){
+    public void insertDish(Dish dish) {
         Connection conn = null;
         PreparedStatement ptmt = null;
         try {
@@ -273,7 +273,7 @@ public class DishDao {
     }
 
     //删除一个菜
-    public void delDish(Dish dish){
+    public void delDish(Dish dish) {
         Connection conn = null;
         PreparedStatement ptmt = null;
         try {
@@ -288,7 +288,7 @@ public class DishDao {
     }
 
     //获得所有窗口名
-    public ArrayList<String> getAllWindows(){
+    public ArrayList<String> getAllWindows() {
         Connection conn = null;
         PreparedStatement ptmt = null;
         ResultSet rs = null;
@@ -298,14 +298,14 @@ public class DishDao {
             String sql = "select * from `2016_s1_windows`"; // SQL语句
             ptmt = conn.prepareStatement(sql);
             rs = ptmt.executeQuery();
-            while (rs.next()){
+            while (rs.next()) {
                 list.add(rs.getString("wname"));
             }
             return list; // 返回集合。
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
@@ -328,7 +328,7 @@ public class DishDao {
     }
 
     //获得所有菜名
-    public ArrayList<String> getAllNames(){
+    public ArrayList<String> getAllNames() {
         Connection conn = null;
         PreparedStatement ptmt = null;
         ResultSet rs = null;
@@ -338,14 +338,14 @@ public class DishDao {
             String sql = "select name from `2016_s1_dishes`"; // SQL语句
             ptmt = conn.prepareStatement(sql);
             rs = ptmt.executeQuery();
-            while (rs.next()){
+            while (rs.next()) {
                 list.add(rs.getString("name"));
             }
             return list; // 返回集合。
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
@@ -368,17 +368,17 @@ public class DishDao {
     }
 
     //按照口味 taste 排序取8个顶级的菜
-    public ArrayList<Dish> getOrderByTaste(String taste){
+    public ArrayList<Dish> getOrderByTaste(String taste) {
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
         ArrayList<Dish> list = new ArrayList<Dish>(); // 商品集合
         try {
             conn = DBHelper.getConnection();
-            String sql = "select * from `2016_s1_dishes` order by "+taste+" desc"; // SQL语句
+            String sql = "select * from `2016_s1_dishes` order by " + taste + " desc"; // SQL语句
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
-            while (rs.next()&& list.size()<8) {
+            while (rs.next() && list.size() < 8) {
                 Dish dish = new Dish();
                 dish.setId(rs.getInt("id"));
                 dish.setName(rs.getString("name"));
@@ -395,7 +395,7 @@ public class DishDao {
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             // 释放数据集对象
             if (rs != null) {
                 try {
