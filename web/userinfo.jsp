@@ -29,7 +29,9 @@
         img {
             width: 200px;
             height: 200px;
-
+        }
+        html{
+            color: white;
         }
 
     </style>
@@ -124,9 +126,8 @@
             <!-- CONTENT -->
             <div id="menu-container">
                 <%--个人信息--%>
-                <div id="menu-1" class="homepage home-section text-center"
-                     style="background:url(images/9.jpg);background-size: 100% 100%">
-                    <div class="box-content profile">
+                <div id="menu-1" class="homepage home-section text-center">
+                    <div class="box-content profile" style="background:url(images/9.jpg);background-size: 100% 100%">
                         <center>
                             <h3 class="widget-title" align=center>个人信息</h3>
                             <%
@@ -156,7 +157,7 @@
                 </div>
                 <%--回复历史--%>
                 <div id="menu-2" class="content about-section">
-                    <div class="box-content">
+                    <div class="box-content" style="background:url(images/9.jpg);background-size: 100% 100%">
                         <h3 class="widget-title">评论历史</h3>
                         <div class="row">
                             <%
@@ -203,7 +204,7 @@
                 </div>
                 <%--点赞历史--%>
                 <div id="menu-3" class="content gallery-section">
-                    <div class="box-content">
+                    <div class="box-content" style="background:url(images/9.jpg);background-size: 100% 100%">
                         <h3 class="widget-title">点赞历史</h3>
                         <div class="row">
                             <%
@@ -251,7 +252,7 @@
                 </div>
                 <%--评价历史--%>
                 <div id="menu-4" class="content contact-section">
-                    <div class="box-content">
+                    <div class="box-content" style="background:url(images/9.jpg);background-size: 100% 100%">
                         <h3 class="widget-title">评价历史</h3>
                         <div class="row">
                             <%
